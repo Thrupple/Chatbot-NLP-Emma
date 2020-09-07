@@ -91,3 +91,38 @@ def find_associations(message):
                                         train_association(word.lemma, "HAS-PROPERTY", adjectiveCandidate.lemma)
                                     else:
                                         break
+
+                                # NP + VP >> NN HAS-ABILITY-TO VB (Cats can run fast >> cat HAS-ABILITY-TO run)
+                                for verbCandidate in sentence.words[word.index+1:-1]:
+                                    if "VP" in verbCandidate.chunk and verbCandidate.partOfSpeech in misc.verbCodes and verbCandidate.lemma != u'be':
+                                        train_association(word.lemma, "HAS-ABILITY-TO", verbCandidate.lemma)
+                                    else:
+                                        break
+
+                            if word.partOfSpeech in misc.verbCodes:
+                                # VP containing RB + VB >> RB HAS-PROPERTY VB (It quickly moves >> quickly HAS-PROPERTY moves)
+                                if word.index != 0 and sentence.words[word.index-1].partOfSpeech in misc.adverbCodes:
+                                    for propertyCandidate in reversed(sentence.words[0:word.index]):
+                                        if propertyCandidate.partOfSpeech in misc.adverbCodes:
+                                            train_association(word.lemma, "HAS-PROPERTY", propertyCandidate.lemma)
+                            
+                            # NP + 'has' + NP >> NN HAS NN (People have two hands >> People HAS hands)
+                            if word.lemma == u'have' and "NP" in sentence.words[word.index-1].chunk and "NP" in sentence.words[word.index+1].chunk:
+                                # Attempt to find the subject
+                                subject = None
+                                for subjectCandidate in reversed(sentence.words[0:word.index]):
+                                    if subjectCandidate.partOfSpeech in misc.nounCodes:
+                                        subject = subjectCandidate
+                                        break
+                                # Attempt to find the target
+                                target = None
+                                for targetCandidate in sentence.words[word.index+1:-1]:
+                                    if targetCandidate.partOfSpeech in misc.nounCodes:
+                                        target = targetCandidate
+                                        break
+                                # If we have a subject and target, create the association
+                                if subject != None and target != None:
+                                    train_association(subject.lemma, 'HAS', target.lemma)
+
+                            # # VB + obj >> VB HAS-OBJECT NN (This button releases the hounds. >> release HAS-OBJECT hound)
+                            # if "OBJ" in word.subjectObject and word.partOfSpeech in misc.nounCodes:
