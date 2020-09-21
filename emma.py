@@ -244,3 +244,62 @@ class Message:
             dictionary = []
             for row in cursor.fetchall():
                 dictionary.append(row[0])
+
+        for keyword in self.keywords:
+            if keyword not in dictionary:
+                logging.debug("Removing unknown word {0} from keyword list".format(keyword))
+                self.keywords.remove(keyword)
+
+        # If we don't have any keywords, that's bad
+        if self.keywords == []:
+            logging.error("No keywords detected in message! This will cause a critical failure when we try to reply!")
+
+    def __str__(self): 
+        return self.message
+
+def train(message):
+    """Read a message as a string, learn from it, store what we learned in the database"""
+    logging.info("Consuming message...")
+    message = pronouns.determine_pronoun_references(message)
+    message = pronouns.determine_posessive_references(message)
+
+    logging.info("Looking for new words...")
+    # Gather words we already know from database
+    with connection:
+        cursor.execute('SELECT * FROM dictionary;')
+
+        knownWords = []
+        for row in cursor.fetchall():
+            knownWords.append((row[0], row[1]))     # (lemma, POS)
+
+        # Compare them against each word from the message
+        for sentence in message.sentences:
+            for word in sentence.words:
+                if word.partOfSpeech not in misc.trashPOS:
+                    # If it's a word we don't have in the database, add it
+                    #TODO: check the types of word.lemma and knownWord because apparently they aren't the same
+                    if word.lemma not in [knownWord[0] for knownWord in knownWords if word.lemma == knownWord[0]]:
+                        logging.info("Learned new word: \'{0}\'!".format(word.lemma.encode('utf-8', 'ignore')))
+                        logging.debug("Prev. word POS: \'{0}\'".format(word.partOfSpeech))
+                        knownWords.append((word.lemma, word.partOfSpeech))
+                        with connection:
+                            cursor.execute('INSERT INTO dictionary VALUES (?, ?, 0);', (re.escape(word.lemma.encode('utf-8', 'ignore')), word.partOfSpeech))
+
+    logging.info("Finding associations...")
+    associationtrainer.find_associations(message)
+
+def filter_message(messageText):
+    """Make it easier for the computer to read messages (and also screen out banned words)"""
+    # Add punctuation is it isn't already present
+    if messageText[-1] not in ['!', '?', '.']:
+        messageText += "."
+
+    # Translate internet slang and fix weird parsing stuff
+    filtered = []
+    for word in messageText.split(' '):
+        word = word.decode('utf-8')
+        # Translate internet abbreviations
+        if word.lower() in misc.netspeak.keys():
+            logging.debug("Translating \'{0}\' from net speak...".format(word))
+            filtered.extend(misc.netspeak[word.lower()])
+        # Change "n't" to "not"
