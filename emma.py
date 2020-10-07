@@ -341,3 +341,59 @@ class Ask:
 # Create Mastodon API instance
 mastodon = Mastodon(
     access_token = 'emma_usercred.secret',
+    api_base_url = 'https://botsin.space'
+)
+
+# Create listener
+class Listener(StreamListener):
+    """
+    Listens for Mastodon activity
+
+    Class Variables
+    message         str     String representation of the Message
+    sender          str     Username of person who sent the Message
+    tootID          int     ID of the Toot so that we can reply
+    reply           str     Emma's reply to the Message
+    """
+    def on_notification(self, status):
+        if status.type == 'mention':       
+            # Don't reply to bot posts
+            if status.status.account.bot:
+                logging.info("Message is from a bot account. Skipping...")
+                return False     
+                
+            # Get status, remove HTML markup
+            self.message = status.status.content
+            self.message = re.sub('<[^<]+?>', '', self.message)
+            print self.message
+
+            # Get other uesful variables
+            self.sender = status.status.account.username
+            self.tootID = status.status.id
+
+            # TODO: Block nsfw CWs
+
+            logging.info("@{0} says: {1}".format(self.sender, self.message))
+            # Format message for easier manipulation and more accurate understanding
+            self.message = self.message.encode('utf-8', 'ignore')
+            self.message = filter_message(self.message)
+            self.message = Message(self.message, self.sender)
+            logging.debug("Filtered message: {0}".format(self.message))
+
+            # Remove profanity and banned words
+            logging.debug("Searching for profanity & banned words...")
+            with open('bannedwords.txt', 'r') as bannedWords:
+                bannedWords = bannedWords.read()
+                bannedWords = bannedWords.split('\n')
+                bannedWords.extend(pattern.en.wordlist.PROFANITY)
+                bannedWords.remove('gay')
+                bannedWords.remove('queer')
+                bannedWords.remove('hell')
+
+                for word in self.message.message.split(' '):
+                    if word.lower() in bannedWords:
+                        logging.info("Banned word {0} found in message. Skipping...")
+                        return False
+
+            # Learn from and reply to the message
+            train(self.message)
