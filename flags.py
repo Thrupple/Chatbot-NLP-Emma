@@ -1,0 +1,4 @@
+# Debug mode
+enableDebugMode = False
+
+#

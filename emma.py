@@ -441,3 +441,4 @@ else:
         # Sentence generation failed
         pass
     else:
+        print reply
