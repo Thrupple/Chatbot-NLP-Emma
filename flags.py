@@ -6,4 +6,5 @@ useTestingStrings = True
 testingStringType = 'simple'
 '''
 testingStringsSimple = [
-    u"
+    u"The sky is blue.",
+    u"Dogs are very fluffy!",
