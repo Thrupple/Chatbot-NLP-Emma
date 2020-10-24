@@ -13,4 +13,5 @@ testingStringsSimple = [
     u"The quick brown fox jumped over the lazy dog."
 ]
 '''
-te
+testingStringsSimple = [
+    u"What is the color of t
