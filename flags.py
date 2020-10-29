@@ -18,4 +18,5 @@ testingStringsSimple = [
 ]
 
 if testingStringType == 'simple':
-    te
+    testingStrings = testingStringsSimple
+elif t
