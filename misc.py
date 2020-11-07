@@ -7,3 +7,5 @@ netspeak = {
     u'btw': [u'by', u'the', u'way'],
     u'cn': [u'can'],
     u'gonna': [u'going', u'to'],
+    u'im': [u'I\'m'],
+    u'imo': [u'in', u'my', u'op
