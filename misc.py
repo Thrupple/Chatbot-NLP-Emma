@@ -8,4 +8,6 @@ netspeak = {
     u'cn': [u'can'],
     u'gonna': [u'going', u'to'],
     u'im': [u'I\'m'],
-    u'imo': [u'in', u'my', u'op
+    u'imo': [u'in', u'my', u'opinion'],
+    u'lemme': [u'let', u'me'],
+    u'n': [
