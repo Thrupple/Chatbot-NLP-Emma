@@ -16,3 +16,5 @@ netspeak = {
     u'r': [u'are'],
     u'tbh': [u'to', u'be', u'honest'],
     u'u': [u'you'],
+    u'ur': [u'your'],
+    u'yr': [u'your'
