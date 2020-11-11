@@ -17,4 +17,8 @@ netspeak = {
     u'tbh': [u'to', u'be', u'honest'],
     u'u': [u'you'],
     u'ur': [u'your'],
-    u'yr': [u'your'
+    u'yr': [u'your'],
+    u'yea': [u'yeah']
+}
+
+nounCodes = ['NN',
