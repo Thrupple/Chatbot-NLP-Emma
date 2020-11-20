@@ -29,4 +29,4 @@ whWordCodes = ['WDT', 'WP', 'WP$', 'WRB']
 
 trashPOS = ['LS', 'SYM', 'UH', '.', ',', ':', '\"' '(', ')', 'FW']
 
-greetingString
+greetingStrings = [[u'what\'s', u'up'], [u'hi'], [u'yo'], [u'hiy
