@@ -1,3 +1,7 @@
 import logging
 import random
-i
+import re
+import string
+
+import pattern.en
+import sq
