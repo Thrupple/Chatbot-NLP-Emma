@@ -8,4 +8,7 @@ import sqlite3 as sql
 
 import misc
 
-connection = sql.connect('
+connection = sql.connect('emma.db')
+cursor = connection.cursor()
+
+class
