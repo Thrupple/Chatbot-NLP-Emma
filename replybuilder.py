@@ -13,4 +13,6 @@ cursor = connection.cursor()
 
 class Sentence:
     def __init__(self):
-       
+        self.domain = ''
+        self.topic = ''
+        self
