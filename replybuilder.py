@@ -11,4 +11,6 @@ import misc
 connection = sql.connect('emma.db')
 cursor = connection.cursor()
 
-class
+class Sentence:
+    def __init__(self):
+       
