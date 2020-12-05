@@ -15,4 +15,5 @@ class Sentence:
     def __init__(self):
         self.domain = ''
         self.topic = ''
-        self
+        self.isPlural = False
+        self.contents = 
