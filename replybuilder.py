@@ -16,4 +16,7 @@ class Sentence:
         self.domain = ''
         self.topic = ''
         self.isPlural = False
-        self.contents = 
+        self.contents = []
+
+class SBBWord:
+    def __init__(self, word, partOfS
