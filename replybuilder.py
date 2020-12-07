@@ -19,4 +19,6 @@ class Sentence:
         self.contents = []
 
 class SBBWord:
-    def __init__(self, word, partOfS
+    def __init__(self, word, partOfSpeech):
+        self.word = word
+        self.par
