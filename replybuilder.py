@@ -21,4 +21,7 @@ class Sentence:
 class SBBWord:
     def __init__(self, word, partOfSpeech):
         self.word = word
-        self.par
+        self.partOfSpeech = str
+
+        with connection:
+     
