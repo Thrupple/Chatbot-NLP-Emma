@@ -24,4 +24,4 @@ class SBBWord:
         self.partOfSpeech = str
 
         with connection:
-     
+            cursor.execute('SELECT part_of_s
