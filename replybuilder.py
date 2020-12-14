@@ -26,4 +26,6 @@ class SBBWord:
         with connection:
             cursor.execute('SELECT part_of_speech FROM dictionary WHERE word = ?;', (self.word,))
             SQLReturn = cursor.fetchall()
-        
+            self.partOfSpeech = SQLReturn[0]
+
+class SBBHa
