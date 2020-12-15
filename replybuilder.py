@@ -32,4 +32,9 @@ class SBBHaveHas:
     def __init__(self):
         pass
 
-class SBBI
+class SBBIsAre:
+    def __init__(self):
+        pass
+
+class SBBArticle:
+    
