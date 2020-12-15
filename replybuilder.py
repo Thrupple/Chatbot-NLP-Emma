@@ -28,4 +28,8 @@ class SBBWord:
             SQLReturn = cursor.fetchall()
             self.partOfSpeech = SQLReturn[0]
 
-class SBBHa
+class SBBHaveHas:
+    def __init__(self):
+        pass
+
+class SBBI
