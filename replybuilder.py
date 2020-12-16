@@ -37,4 +37,7 @@ class SBBIsAre:
         pass
 
 class SBBArticle:
-    
+    def __init__(self):
+        pass
+
+class SBBConjuncti
