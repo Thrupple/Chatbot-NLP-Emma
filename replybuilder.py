@@ -40,4 +40,8 @@ class SBBArticle:
     def __init__(self):
         pass
 
-class SBBConjuncti
+class SBBConjunction:
+    def __init__(self):
+        pass
+
+clas
