@@ -44,4 +44,6 @@ class SBBConjunction:
     def __init__(self):
         pass
 
-clas
+class SBBPunctuation:
+    def __init__(self):
+ 
