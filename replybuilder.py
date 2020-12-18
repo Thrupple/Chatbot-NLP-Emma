@@ -46,4 +46,7 @@ class SBBConjunction:
 
 class SBBPunctuation:
     def __init__(self):
- 
+        pass
+
+def weighted_roll(choices):
+    """Takes 
