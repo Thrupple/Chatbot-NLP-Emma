@@ -49,4 +49,6 @@ class SBBPunctuation:
         pass
 
 def weighted_roll(choices):
-    """Takes a list of (weight, option) tuples and makes a weighted die
+    """Takes a list of (weight, option) tuples and makes a weighted die roll"""
+    dieSeed = 0
+    for choice in choi
