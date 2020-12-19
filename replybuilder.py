@@ -49,4 +49,4 @@ class SBBPunctuation:
         pass
 
 def weighted_roll(choices):
-    """Takes 
+    """Takes a list of (weight, option) tuples and makes a weighted die
