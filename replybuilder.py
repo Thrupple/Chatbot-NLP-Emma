@@ -51,4 +51,6 @@ class SBBPunctuation:
 def weighted_roll(choices):
     """Takes a list of (weight, option) tuples and makes a weighted die roll"""
     dieSeed = 0
-    for choice in choi
+    for choice in choices:
+        dieSeed += choice[0]
+    dieRe
