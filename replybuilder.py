@@ -55,4 +55,5 @@ def weighted_roll(choices):
         dieSeed += choice[0]
     dieResult = random.uniform(0, dieSeed)
 
-    for c
+    for choice in choices:
+        dieResult -= cho
