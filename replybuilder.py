@@ -56,4 +56,6 @@ def weighted_roll(choices):
     dieResult = random.uniform(0, dieSeed)
 
     for choice in choices:
-        dieResult -= cho
+        dieResult -= choice[0]
+        if dieResult <= 0:
+         
