@@ -58,4 +58,7 @@ def weighted_roll(choices):
     for choice in choices:
         dieResult -= choice[0]
         if dieResult <= 0:
-         
+            return choice[1]
+
+class Association:
+    def __init__(
