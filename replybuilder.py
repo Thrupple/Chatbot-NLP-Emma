@@ -62,4 +62,6 @@ def weighted_roll(choices):
 
 class Association:
     def __init__(self, word, associationType, target, weight):
-     
+        self.word = word
+        self.target = target
+        self
