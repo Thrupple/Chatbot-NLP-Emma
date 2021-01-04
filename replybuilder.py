@@ -65,4 +65,7 @@ class Association:
         self.word = word
         self.target = target
         self.associationType = associationType
-        self.
+        self.weight = weight
+
+def find_associations(keyword):
+    """F
