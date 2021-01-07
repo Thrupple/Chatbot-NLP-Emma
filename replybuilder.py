@@ -68,4 +68,4 @@ class Association:
         self.weight = weight
 
 def find_associations(keyword):
-    """F
+    """Finds associations in our association model for given key
