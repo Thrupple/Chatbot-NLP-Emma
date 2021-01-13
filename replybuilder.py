@@ -69,4 +69,6 @@ class Association:
 
 def find_associations(keyword):
     """Finds associations in our association model for given keywords"""
-    logging.debug("Finding associations fo
+    logging.debug("Finding associations for {0}...".format(keyword)) 
+    associations = []
+ 
