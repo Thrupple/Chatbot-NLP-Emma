@@ -72,4 +72,4 @@ def find_associations(keyword):
     logging.debug("Finding associations for {0}...".format(keyword)) 
     associations = []
     with connection:
-        cursor.execute('S
+        cursor.execute('SELECT * FROM associationmodel WHERE word = ? O
