@@ -75,4 +75,4 @@ def find_associations(keyword):
         cursor.execute('SELECT * FROM associationmodel WHERE word = ? OR target = ?;', (keyword, keyword))
         SQLReturn = cursor.fetchall()
         for row in SQLReturn:
-        
+            associations.append(Association(row[0], row[1
