@@ -78,4 +78,5 @@ def find_associations(keyword):
             associations.append(Association(row[0], row[1], row[2], row[3]))
     return associations
 
-def find
+def find_part_of_speech(keyword):
+    """Looks in our d
