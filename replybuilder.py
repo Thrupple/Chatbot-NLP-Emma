@@ -79,4 +79,4 @@ def find_associations(keyword):
     return associations
 
 def find_part_of_speech(keyword):
-    """Looks in our d
+    """Looks in our dictionary for the part of speech of 
