@@ -81,4 +81,6 @@ def find_associations(keyword):
 def find_part_of_speech(keyword):
     """Looks in our dictionary for the part of speech of a given keyword"""
     # TODO: Make this able to handle words with more than one usage
-    logging.debug("Looking up \"{0}\" in the dictionary...".forma
+    logging.debug("Looking up \"{0}\" in the dictionary...".format(keyword))
+    with connection:
+        cursor.exec
