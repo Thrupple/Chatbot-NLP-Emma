@@ -83,4 +83,5 @@ def find_part_of_speech(keyword):
     # TODO: Make this able to handle words with more than one usage
     logging.debug("Looking up \"{0}\" in the dictionary...".format(keyword))
     with connection:
-        cursor.execute('SELECT part_of_speech FROM dictionary WHERE word 
+        cursor.execute('SELECT part_of_speech FROM dictionary WHERE word = ?;', (keyword,))
+        SQLReturn = cursor.fetchall(
