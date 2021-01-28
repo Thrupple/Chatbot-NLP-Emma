@@ -86,4 +86,8 @@ def find_part_of_speech(keyword):
         cursor.execute('SELECT part_of_speech FROM dictionary WHERE word = ?;', (keyword,))
         SQLReturn = cursor.fetchall()
         if SQLReturn:
-            return SQLRetur
+            return SQLReturn[0]
+        else:
+            return "NN"
+
+# T
