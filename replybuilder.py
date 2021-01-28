@@ -84,4 +84,6 @@ def find_part_of_speech(keyword):
     logging.debug("Looking up \"{0}\" in the dictionary...".format(keyword))
     with connection:
         cursor.execute('SELECT part_of_speech FROM dictionary WHERE word = ?;', (keyword,))
-        SQLReturn = cursor.fetchall(
+        SQLReturn = cursor.fetchall()
+        if SQLReturn:
+            return SQLRetur
