@@ -90,4 +90,5 @@ def find_part_of_speech(keyword):
         else:
             return "NN"
 
-# TODO: Random choices should be in
+# TODO: Random choices should be influenced by mood or other
+def make_declara
