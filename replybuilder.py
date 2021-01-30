@@ -91,4 +91,5 @@ def find_part_of_speech(keyword):
             return "NN"
 
 # TODO: Random choices should be influenced by mood or other
-def make_declara
+def make_declarative(sentence):
+    # Look for HAS, IS-A or HAS-ABI
