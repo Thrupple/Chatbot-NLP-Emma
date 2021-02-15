@@ -94,4 +94,6 @@ def find_part_of_speech(keyword):
 def make_declarative(sentence):
     # Look for HAS, IS-A or HAS-ABILITY-TO associations 
     associations = find_associations(sentence.topic)
-    hasAssociati
+    hasAssociations = []
+    isaAssociations = []
+    hasabilitytoAssoc
