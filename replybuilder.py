@@ -96,4 +96,6 @@ def make_declarative(sentence):
     associations = find_associations(sentence.topic)
     hasAssociations = []
     isaAssociations = []
-    hasabilitytoAssoc
+    hasabilitytoAssociations = []
+    haspropertyAssociations = []
+    for ass
