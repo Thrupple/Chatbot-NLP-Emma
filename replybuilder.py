@@ -98,4 +98,5 @@ def make_declarative(sentence):
     isaAssociations = []
     hasabilitytoAssociations = []
     haspropertyAssociations = []
-    for ass
+    for association in associations:
+     
