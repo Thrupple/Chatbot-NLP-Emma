@@ -100,4 +100,4 @@ def make_declarative(sentence):
     haspropertyAssociations = []
     for association in associations:
         if association.associationType == "HAS" and association.word == sentence.topic:
-            hasA
+            hasAssociations.append((association.weight, associ
