@@ -103,4 +103,5 @@ def make_declarative(sentence):
             hasAssociations.append((association.weight, association))
         elif association.associationType == "IS-A" and association.word == sentence.topic:
             isaAssociations.append((association.weight, association))
-        elif association.associationType == "HAS-ABILITY-TO" and association.word ==
+        elif association.associationType == "HAS-ABILITY-TO" and association.word == sentence.topic:
+            hasabilitytoAssociations.app
