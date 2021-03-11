@@ -108,4 +108,6 @@ def make_declarative(sentence):
         elif association.associationType == "HAS-PROPERTY" and association.word == sentence.topic:
             haspropertyAssociations.append((association.weight, association))
             
-    # If we have associations other than HAS-PROPERTY ones, we can make more complex sentence
+    # If we have associations other than HAS-PROPERTY ones, we can make more complex sentences
+    allowComplexDeclarative = False
+    if len(ha
