@@ -111,4 +111,6 @@ def make_declarative(sentence):
     # If we have associations other than HAS-PROPERTY ones, we can make more complex sentences
     allowComplexDeclarative = False
     if len(hasAssociations) > 0 or len(isaAssociations) or len(hasabilitytoAssociations) > 0:
-     
+        allowComplexDeclarative = True
+
+    # Decide wh
