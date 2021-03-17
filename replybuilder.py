@@ -113,4 +113,5 @@ def make_declarative(sentence):
     if len(hasAssociations) > 0 or len(isaAssociations) or len(hasabilitytoAssociations) > 0:
         allowComplexDeclarative = True
 
-    # Decide wh
+    # Decide what kind of sentence to make and make it
+    if rando
