@@ -114,4 +114,5 @@ def make_declarative(sentence):
         allowComplexDeclarative = True
 
     # Decide what kind of sentence to make and make it
-    if rando
+    if random.choice([False, allowComplexDeclarative]):
+       
