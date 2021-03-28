@@ -117,4 +117,6 @@ def make_declarative(sentence):
     if random.choice([False, allowComplexDeclarative]):
         # Complex
         # Decide /what kinds/ of complex sentence we can make
-        validSentenceAspect
+        validSentenceAspects = []
+        if len(hasAssociations) > 0:
+         
