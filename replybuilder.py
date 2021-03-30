@@ -119,4 +119,5 @@ def make_declarative(sentence):
         # Decide /what kinds/ of complex sentence we can make
         validSentenceAspects = []
         if len(hasAssociations) > 0:
-         
+            validSentenceAspects.append('HAS')
+     
