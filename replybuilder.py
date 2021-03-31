@@ -121,4 +121,5 @@ def make_declarative(sentence):
         if len(hasAssociations) > 0:
             validSentenceAspects.append('HAS')
         if len(isaAssociations) > 0:
-            valid
+            validSentenceAspects.append('IS-A')
+        if len(hasabilityt
