@@ -125,4 +125,6 @@ def make_declarative(sentence):
         if len(hasabilitytoAssociations) > 0:
             validSentenceAspects.append('HAS-ABILITY-TO')
         # Choose the kind of sentence to make
-        sentenceAspect = r
+        sentenceAspect = random.choice(validSentenceAspects)
+
+        if sente
