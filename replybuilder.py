@@ -128,4 +128,5 @@ def make_declarative(sentence):
         sentenceAspect = random.choice(validSentenceAspects)
 
         if sentenceAspect == 'HAS':
-            sentence = mak
+            sentence = make_simple(sentence)
+            sente
