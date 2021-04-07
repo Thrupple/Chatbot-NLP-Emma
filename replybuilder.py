@@ -127,4 +127,5 @@ def make_declarative(sentence):
         # Choose the kind of sentence to make
         sentenceAspect = random.choice(validSentenceAspects)
 
-        if sente
+        if sentenceAspect == 'HAS':
+            sentence = mak
