@@ -131,4 +131,4 @@ def make_declarative(sentence):
             sentence = make_simple(sentence)
             sentence.contents.append(SBBHaveHas())
             if random.choice([True, False]):
-     
+                sentence.contents.append(SBBArticle())
