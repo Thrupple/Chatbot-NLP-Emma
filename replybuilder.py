@@ -130,4 +130,5 @@ def make_declarative(sentence):
         if sentenceAspect == 'HAS':
             sentence = make_simple(sentence)
             sentence.contents.append(SBBHaveHas())
-            if rando
+            if random.choice([True, False]):
+     
