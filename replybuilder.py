@@ -133,4 +133,5 @@ def make_declarative(sentence):
             if random.choice([True, False]):
                 sentence.contents.append(SBBArticle())
                 sentence.contents.append(weighted_roll(hasAssociations).target)
-           
+            else:
+                sentence.contents.append(patte
