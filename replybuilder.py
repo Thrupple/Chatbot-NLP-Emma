@@ -134,4 +134,4 @@ def make_declarative(sentence):
                 sentence.contents.append(SBBArticle())
                 sentence.contents.append(weighted_roll(hasAssociations).target)
             else:
-                sentence.contents.append(patte
+                sentence.contents.append(pattern.en.pluralize(weighted_roll(hasAssoci
