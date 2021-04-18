@@ -135,4 +135,5 @@ def make_declarative(sentence):
                 sentence.contents.append(weighted_roll(hasAssociations).target)
             else:
                 sentence.contents.append(pattern.en.pluralize(weighted_roll(hasAssociations).target))
-        elif sentenceAspect ==
+        elif sentenceAspect == 'IS-A':
+            sentence = make_simple(sen
