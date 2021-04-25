@@ -138,4 +138,5 @@ def make_declarative(sentence):
         elif sentenceAspect == 'IS-A':
             sentence = make_simple(sentence)
             sentence.contents.extend([SBBIsAre(), SBBArticle()])
-            sentence.cont
+            sentence.contents.append(weighted_roll(isaAssociations).target)
+       
