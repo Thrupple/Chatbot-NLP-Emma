@@ -139,4 +139,5 @@ def make_declarative(sentence):
             sentence = make_simple(sentence)
             sentence.contents.extend([SBBIsAre(), SBBArticle()])
             sentence.contents.append(weighted_roll(isaAssociations).target)
-       
+        elif sentenceAspect == 'HAS-ABILITY-TO':
+            if random.cho
