@@ -141,4 +141,5 @@ def make_declarative(sentence):
             sentence.contents.append(weighted_roll(isaAssociations).target)
         elif sentenceAspect == 'HAS-ABILITY-TO':
             if random.choice([True, False]):
-                sentence =
+                sentence = make_simple(sentence)
+                sen
