@@ -143,4 +143,5 @@ def make_declarative(sentence):
             if random.choice([True, False]):
                 sentence = make_simple(sentence)
                 sentence.contents.append(u'can')
-                sentence.content
+                sentence.contents.append(weighted_roll(hasabilitytoAssociations).target)
+      
