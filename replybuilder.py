@@ -142,4 +142,5 @@ def make_declarative(sentence):
         elif sentenceAspect == 'HAS-ABILITY-TO':
             if random.choice([True, False]):
                 sentence = make_simple(sentence)
-                sen
+                sentence.contents.append(u'can')
+                sentence.content
