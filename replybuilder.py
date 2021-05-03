@@ -146,4 +146,4 @@ def make_declarative(sentence):
                 sentence.contents.append(weighted_roll(hasabilitytoAssociations).target)
             else:
                 sentence = make_simple(sentence)
-                sentence.contents.append(pattern.en.conjugate(weighted_roll(hasab
+                sentence.contents.append(pattern.en.conjugate(weighted_roll(hasabilitytoAssociations).target, number="PL"))
