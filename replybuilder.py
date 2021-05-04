@@ -149,4 +149,5 @@ def make_declarative(sentence):
                 sentence.contents.append(pattern.en.conjugate(weighted_roll(hasabilitytoAssociations).target, number="PL"))
     else:
         # Simple
-        if random.choic
+        if random.choice([True, False]):
+            sentence = make_simple(sente
