@@ -150,4 +150,6 @@ def make_declarative(sentence):
     else:
         # Simple
         if random.choice([True, False]):
-            sentence = make_simple(sente
+            sentence = make_simple(sentence)
+        else:
+            sentence.contents.append(
