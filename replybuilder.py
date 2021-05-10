@@ -153,4 +153,5 @@ def make_declarative(sentence):
             sentence = make_simple(sentence)
         else:
             sentence.contents.append(sentence.topic)
-        sentence.contents.append(SBB
+        sentence.contents.append(SBBIsAre())
+        sentence.contents.append(weighted_roll
