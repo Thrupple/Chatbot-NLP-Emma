@@ -152,4 +152,5 @@ def make_declarative(sentence):
         if random.choice([True, False]):
             sentence = make_simple(sentence)
         else:
-            sentence.contents.append(
+            sentence.contents.append(sentence.topic)
+        sentence.contents.append(SBB
