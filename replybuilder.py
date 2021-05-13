@@ -154,4 +154,6 @@ def make_declarative(sentence):
         else:
             sentence.contents.append(sentence.topic)
         sentence.contents.append(SBBIsAre())
-        sentence.contents.append(weighted_roll
+        sentence.contents.append(weighted_roll(haspropertyAssociations).target)
+        
+    lo
