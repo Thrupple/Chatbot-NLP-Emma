@@ -156,4 +156,4 @@ def make_declarative(sentence):
         sentence.contents.append(SBBIsAre())
         sentence.contents.append(weighted_roll(haspropertyAssociations).target)
         
-    lo
+    logging.debug("Reply (in progress): {0}".format(st
