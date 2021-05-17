@@ -160,4 +160,5 @@ def make_declarative(sentence):
     return sentence
 
 def make_imperative(sentence):
-    # Look for thin
+    # Look for things the object can do
+    associations = find_associations
