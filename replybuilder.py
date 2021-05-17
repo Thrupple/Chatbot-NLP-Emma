@@ -159,4 +159,5 @@ def make_declarative(sentence):
     logging.debug("Reply (in progress): {0}".format(str(sentence.contents)))
     return sentence
 
-d
+def make_imperative(sentence):
+    # Look for thin
