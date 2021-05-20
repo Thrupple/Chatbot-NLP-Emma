@@ -161,4 +161,6 @@ def make_declarative(sentence):
 
 def make_imperative(sentence):
     # Look for things the object can do
-    associations = find_associations
+    associations = find_associations(sentence.topic)
+
+    # Get HAS-ABILITY-TO 
