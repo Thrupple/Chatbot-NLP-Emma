@@ -163,4 +163,5 @@ def make_imperative(sentence):
     # Look for things the object can do
     associations = find_associations(sentence.topic)
 
-    # Get HAS-ABILITY-TO 
+    # Get HAS-ABILITY-TO associations and also look for HAS associations
+    hasa
