@@ -165,4 +165,5 @@ def make_imperative(sentence):
 
     # Get HAS-ABILITY-TO associations and also look for HAS associations
     hasabilitytoAssociations = []
-    hasAssociations
+    hasAssociations = []
+    for association in associations:
