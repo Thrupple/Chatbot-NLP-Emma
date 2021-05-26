@@ -167,3 +167,4 @@ def make_imperative(sentence):
     hasabilitytoAssociations = []
     hasAssociations = []
     for association in associations:
+        if association.associationTyp
