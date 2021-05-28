@@ -167,4 +167,5 @@ def make_imperative(sentence):
     hasabilitytoAssociations = []
     hasAssociations = []
     for association in associations:
-        if association.associationType == "HAS-ABILITY-TO" and associa
+        if association.associationType == "HAS-ABILITY-TO" and association.word == sentence.topic:
+            hasabilitytoAs
