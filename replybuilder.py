@@ -168,4 +168,5 @@ def make_imperative(sentence):
     hasAssociations = []
     for association in associations:
         if association.associationType == "HAS-ABILITY-TO" and association.word == sentence.topic:
-            hasabilitytoAs
+            hasabilitytoAssociations.append((association.weight, association))
+  
