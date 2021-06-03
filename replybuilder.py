@@ -172,4 +172,4 @@ def make_imperative(sentence):
         elif association.associationType == "HAS" and association.word == sentence.topic:
             hasAssociations.append((association.weight, association))
 
-    #
+    # If we have HAS associations, we can make slightl
