@@ -173,4 +173,5 @@ def make_imperative(sentence):
             hasAssociations.append((association.weight, association))
 
     # If we have HAS associations, we can make slightly more complex sentences
-    allowComplexImper
+    allowComplexImperative = False
+    if len(hasAssociations
