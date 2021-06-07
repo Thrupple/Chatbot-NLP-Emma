@@ -174,4 +174,7 @@ def make_imperative(sentence):
 
     # If we have HAS associations, we can make slightly more complex sentences
     allowComplexImperative = False
-    if len(hasAssociations
+    if len(hasAssociations) > 0:
+        allowComplexImperative = True
+
+   
