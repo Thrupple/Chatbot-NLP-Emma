@@ -177,4 +177,5 @@ def make_imperative(sentence):
     if len(hasAssociations) > 0:
         allowComplexImperative = True
 
-   
+    # Make the sentence
+    sentence.contents.a
