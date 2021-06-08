@@ -178,4 +178,6 @@ def make_imperative(sentence):
         allowComplexImperative = True
 
     # Make the sentence
-    sentence.contents.a
+    sentence.contents.append(sentence.topic)
+    if random.choice([True, False]):
+   
