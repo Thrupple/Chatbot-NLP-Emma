@@ -180,4 +180,5 @@ def make_imperative(sentence):
     # Make the sentence
     sentence.contents.append(sentence.topic)
     if random.choice([True, False]):
-   
+        sentence.contents.append(u'can')
+    
