@@ -181,4 +181,5 @@ def make_imperative(sentence):
     sentence.contents.append(sentence.topic)
     if random.choice([True, False]):
         sentence.contents.append(u'can')
-    # Coin Flip to decide whether to add always o
+    # Coin Flip to decide whether to add always or never
+    if random.choice([Tr
