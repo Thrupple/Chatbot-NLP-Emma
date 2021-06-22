@@ -184,4 +184,5 @@ def make_imperative(sentence):
     # Coin Flip to decide whether to add always or never
     if random.choice([True, False]):
         sentence.contents.append(random.choice([u'always', u'never', u'sometimes']))
-    sentence.contents.append(weighted_roll(hasabilityt
+    sentence.contents.append(weighted_roll(hasabilitytoAssociations).target)
+    if random.choic
