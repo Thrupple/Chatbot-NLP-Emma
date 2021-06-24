@@ -186,4 +186,5 @@ def make_imperative(sentence):
         sentence.contents.append(random.choice([u'always', u'never', u'sometimes']))
     sentence.contents.append(weighted_roll(hasabilitytoAssociations).target)
     if random.choice([False, allowComplexImperative]):
-        # if ran
+        # if random.choice([True, False]):
+        #     
