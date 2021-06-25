@@ -188,4 +188,5 @@ def make_imperative(sentence):
     if random.choice([False, allowComplexImperative]):
         # if random.choice([True, False]):
         #     sentence.contents.append(u'with')
-        if random.choice([Tru
+        if random.choice([True, False]):
+            sentence.contents.append(SBBArticle(
