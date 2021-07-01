@@ -191,4 +191,6 @@ def make_imperative(sentence):
         if random.choice([True, False]):
             sentence.contents.append(SBBArticle())
             sentence.contents.append(weighted_roll(hasAssociations).target)
-        else
+        else:
+            if sentence.isPlural:
+                sentenc
