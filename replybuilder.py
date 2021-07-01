@@ -190,4 +190,5 @@ def make_imperative(sentence):
         #     sentence.contents.append(u'with')
         if random.choice([True, False]):
             sentence.contents.append(SBBArticle())
-            sentence.contents.append(weighted
+            sentence.contents.append(weighted_roll(hasAssociations).target)
+        else
