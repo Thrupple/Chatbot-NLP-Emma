@@ -195,4 +195,6 @@ def make_imperative(sentence):
             if sentence.isPlural:
                 sentence.contents.append(pattern.en.pluralize(weighted_roll(hasAssociations).target))
             else:
-                sentence.contents.append(weighted_roll(hasA
+                sentence.contents.append(weighted_roll(hasAssociations).target)
+        
+    logging
