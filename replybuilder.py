@@ -197,4 +197,4 @@ def make_imperative(sentence):
             else:
                 sentence.contents.append(weighted_roll(hasAssociations).target)
         
-    logging
+    logging.debug("Reply (in progress): {0}".format(str(sentence.
