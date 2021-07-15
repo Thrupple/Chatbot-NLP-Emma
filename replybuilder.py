@@ -201,4 +201,6 @@ def make_imperative(sentence):
     return sentence
 
 def make_interrogative(sentence):
-    # Start the setence with a tem
+    # Start the setence with a template
+    starters = [
+        [u'what', u
