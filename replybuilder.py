@@ -203,4 +203,8 @@ def make_imperative(sentence):
 def make_interrogative(sentence):
     # Start the setence with a template
     starters = [
-        [u'what', u
+        [u'what', u'is'],
+        [u'what\'s'],
+        [],
+    ]
+    se
