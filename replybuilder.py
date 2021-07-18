@@ -207,4 +207,6 @@ def make_interrogative(sentence):
         [u'what\'s'],
         [],
     ]
-    se
+    sentence.contents.extend(random.choice(starters))
+
+ 
