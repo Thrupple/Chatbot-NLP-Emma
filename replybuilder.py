@@ -210,4 +210,6 @@ def make_interrogative(sentence):
     sentence.contents.extend(random.choice(starters))
 
     # Add on the subject
-    sentence = make_sim
+    sentence = make_simple(sentence)
+
+    sentence.contents.append(u'?')
