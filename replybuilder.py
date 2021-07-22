@@ -215,3 +215,6 @@ def make_interrogative(sentence):
     sentence.contents.append(u'?')
     logging.debug("Reply (in progress): {0}".format(str(sentence.contents)))
     return sentence
+
+def make_simple(sentence):
+    # Look for adjectives to descri
