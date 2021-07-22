@@ -213,4 +213,5 @@ def make_interrogative(sentence):
     sentence = make_simple(sentence)
 
     sentence.contents.append(u'?')
-    logging.debug("Reply (in progress): {0}".forma
+    logging.debug("Reply (in progress): {0}".format(str(sentence.contents)))
+    return sentence
