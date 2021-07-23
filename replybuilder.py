@@ -218,4 +218,6 @@ def make_interrogative(sentence):
 
 def make_simple(sentence):
     # Look for adjectives to describe the object
-    associations = find_associations(se
+    associations = find_associations(sentence.topic)
+
+    # Decide whether to add an articl
