@@ -220,4 +220,6 @@ def make_simple(sentence):
     # Look for adjectives to describe the object
     associations = find_associations(sentence.topic)
 
-    # Decide whether to add an articl
+    # Decide whether to add an article
+    if random.choice([True, False]):
+        se
