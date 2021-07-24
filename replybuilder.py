@@ -222,4 +222,6 @@ def make_simple(sentence):
 
     # Decide whether to add an article
     if random.choice([True, False]):
-        se
+        sentence.contents.append(SBBArticle())
+
+    # S
