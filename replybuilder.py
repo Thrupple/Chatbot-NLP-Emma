@@ -225,4 +225,5 @@ def make_simple(sentence):
         sentence.contents.append(SBBArticle())
 
     # See if we have any adjective associations handy
-    h
+    haspropertyAssociations = []
+    for association in
