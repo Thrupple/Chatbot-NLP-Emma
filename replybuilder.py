@@ -224,4 +224,5 @@ def make_simple(sentence):
     if random.choice([True, False]):
         sentence.contents.append(SBBArticle())
 
-    # S
+    # See if we have any adjective associations handy
+    h
