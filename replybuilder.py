@@ -227,4 +227,4 @@ def make_simple(sentence):
     # See if we have any adjective associations handy
     haspropertyAssociations = []
     for association in associations:
-        if association.associationTyp
+        if association.associationType == "HAS-PROPERTY" and association.word == sente
