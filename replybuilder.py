@@ -228,4 +228,6 @@ def make_simple(sentence):
     haspropertyAssociations = []
     for association in associations:
         if association.associationType == "HAS-PROPERTY" and association.word == sentence.topic:
-            haspropertyAssociations.
+            haspropertyAssociations.append((association.weight, association))
+
+    # If w
