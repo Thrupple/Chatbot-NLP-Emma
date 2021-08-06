@@ -230,4 +230,4 @@ def make_simple(sentence):
         if association.associationType == "HAS-PROPERTY" and association.word == sentence.topic:
             haspropertyAssociations.append((association.weight, association))
 
-    # If w
+    # If we do, put them all in a list and have a chance to ad
