@@ -233,4 +233,5 @@ def make_simple(sentence):
     # If we do, put them all in a list and have a chance to add some to the sentence
     if len(haspropertyAssociations) > 0:
         # Add adjective(s)
-        if len(haspropert
+        if len(haspropertyAssociations) > 1:
+           
