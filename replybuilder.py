@@ -234,4 +234,5 @@ def make_simple(sentence):
     if len(haspropertyAssociations) > 0:
         # Add adjective(s)
         if len(haspropertyAssociations) > 1:
-           
+            for i in range(random.randint(0, 2)):
+        
