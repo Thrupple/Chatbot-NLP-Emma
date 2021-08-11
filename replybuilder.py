@@ -235,4 +235,4 @@ def make_simple(sentence):
         # Add adjective(s)
         if len(haspropertyAssociations) > 1:
             for i in range(random.randint(0, 2)):
-        
+                sentence.contents.append(weighted_roll
