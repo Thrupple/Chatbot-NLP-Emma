@@ -239,4 +239,6 @@ def make_simple(sentence):
         else:
             sentence.contents.append(weighted_roll(haspropertyAssociations).target)
         # Add the word
-        sentence.contents.ap
+        sentence.contents.append(sentence.topic)
+        """
+      
