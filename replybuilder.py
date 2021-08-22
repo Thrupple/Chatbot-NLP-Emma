@@ -241,4 +241,4 @@ def make_simple(sentence):
         # Add the word
         sentence.contents.append(sentence.topic)
         """
-      
+        # Alternate template that might live 
