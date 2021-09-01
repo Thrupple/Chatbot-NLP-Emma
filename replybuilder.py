@@ -243,4 +243,6 @@ def make_simple(sentence):
         """
         # Alternate template that might live in make_declarative() later
         # Add the word
-        sentence.contents.append(sent
+        sentence.contents.append(sentence.topic)
+        # Add is/are
+        sentenc
