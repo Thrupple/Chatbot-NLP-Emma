@@ -245,4 +245,6 @@ def make_simple(sentence):
         # Add the word
         sentence.contents.append(sentence.topic)
         # Add is/are
-        sentenc
+        sentence.contents.append(SBBIsAre)
+        # Add an adjective
+  
