@@ -248,4 +248,5 @@ def make_simple(sentence):
         sentence.contents.append(SBBIsAre)
         # Add an adjective
         sentence.contents.append(weighted_roll(haspropertyAssociations).target)
-        # We can go o
+        # We can go one step further
+        if random.choice([True, 
