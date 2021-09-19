@@ -247,4 +247,5 @@ def make_simple(sentence):
         # Add is/are
         sentence.contents.append(SBBIsAre)
         # Add an adjective
-        sentence.contents.append(weighted_rol
+        sentence.contents.append(weighted_roll(haspropertyAssociations).target)
+        # We can go o
