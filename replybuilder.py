@@ -249,4 +249,5 @@ def make_simple(sentence):
         # Add an adjective
         sentence.contents.append(weighted_roll(haspropertyAssociations).target)
         # We can go one step further
-        if random.choice([True, 
+        if random.choice([True, False]) and len(haspropertyAssociations) > 1:
+      
