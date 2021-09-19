@@ -250,4 +250,4 @@ def make_simple(sentence):
         sentence.contents.append(weighted_roll(haspropertyAssociations).target)
         # We can go one step further
         if random.choice([True, False]) and len(haspropertyAssociations) > 1:
-      
+            sentence.contents.append(u'and'
