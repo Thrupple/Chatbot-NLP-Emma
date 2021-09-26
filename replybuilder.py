@@ -254,4 +254,7 @@ def make_simple(sentence):
             sentence.contents.append(weighted_roll(haspropertyAssociations).target)
         """
     else:
-        # If we have no adjectives, just add the wo
+        # If we have no adjectives, just add the word
+        sentence.contents.append(sentence.topic)
+
+    log
