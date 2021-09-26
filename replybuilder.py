@@ -261,4 +261,4 @@ def make_simple(sentence):
     return sentence
         
 def make_compound(sentence, altTopic):
-   
+    # This function gets an extra topic so that it c
