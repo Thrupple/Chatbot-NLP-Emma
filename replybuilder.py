@@ -263,4 +263,6 @@ def make_simple(sentence):
 def make_compound(sentence, altTopic):
     # This function gets an extra topic so that it can seed a second call of make_simple()
     # Make the first half of the sentence
-    sentence = make
+    sentence = make_simple(sentence)
+
+    # Make a 'fake' sentence to gene
