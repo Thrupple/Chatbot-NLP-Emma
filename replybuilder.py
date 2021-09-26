@@ -253,4 +253,5 @@ def make_simple(sentence):
             sentence.contents.append(u'and')
             sentence.contents.append(weighted_roll(haspropertyAssociations).target)
         """
-    else
+    else:
+        # If we have no adjectives, just add the wo
