@@ -257,4 +257,4 @@ def make_simple(sentence):
         # If we have no adjectives, just add the word
         sentence.contents.append(sentence.topic)
 
-    log
+    logging.debug("Reply (in progress): {0}".format(s
