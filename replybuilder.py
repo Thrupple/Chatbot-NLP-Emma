@@ -259,3 +259,6 @@ def make_simple(sentence):
 
     logging.debug("Reply (in progress): {0}".format(str(sentence.contents)))
     return sentence
+        
+def make_compound(sentence, altTopic):
+   
