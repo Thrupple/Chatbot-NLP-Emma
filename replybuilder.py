@@ -266,4 +266,6 @@ def make_compound(sentence, altTopic):
     sentence = make_simple(sentence)
 
     # Make a 'fake' sentence to generate the second half of the sentence
-    shellSentence = Sen
+    shellSentence = Sentence()
+    shellSentence.topic = altTopic
+    shellS
