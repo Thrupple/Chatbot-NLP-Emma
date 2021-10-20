@@ -269,4 +269,6 @@ def make_compound(sentence, altTopic):
     shellSentence = Sentence()
     shellSentence.topic = altTopic
     shellSentence.domain = 'simple'
-    shellSentence = make_simpl
+    shellSentence = make_simple(shellSentence)
+
+    # Have a chanc
