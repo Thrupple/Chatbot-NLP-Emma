@@ -271,4 +271,6 @@ def make_compound(sentence, altTopic):
     shellSentence.domain = 'simple'
     shellSentence = make_simple(shellSentence)
 
-    # Have a chanc
+    # Have a chance to add a comma
+    if random.choice([True, False]):
+    
