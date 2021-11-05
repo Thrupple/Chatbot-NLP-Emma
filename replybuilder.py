@@ -273,4 +273,4 @@ def make_compound(sentence, altTopic):
 
     # Have a chance to add a comma
     if random.choice([True, False]):
-    
+        sentence.contents[-1] = sentence.cont
