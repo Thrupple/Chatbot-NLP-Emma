@@ -275,4 +275,5 @@ def make_compound(sentence, altTopic):
     if random.choice([True, False]):
         sentence.contents[-1] = sentence.contents[-1] + u','
 
-    # Add a conjunction to the end of
+    # Add a conjunction to the end of the first sentence
+    if random.ch
