@@ -277,4 +277,6 @@ def make_compound(sentence, altTopic):
 
     # Add a conjunction to the end of the first sentence
     if random.choice([True, False]):
-        sentence.contents.append(SBBCo
+        sentence.contents.append(SBBConjunction())
+
+    # Paste the se
