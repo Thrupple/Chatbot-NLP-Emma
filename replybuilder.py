@@ -279,4 +279,4 @@ def make_compound(sentence, altTopic):
     if random.choice([True, False]):
         sentence.contents.append(SBBConjunction())
 
-    # Paste the se
+    # Paste the second half of the sentence onto the first half
