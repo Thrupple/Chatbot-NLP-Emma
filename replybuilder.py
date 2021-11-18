@@ -282,4 +282,5 @@ def make_compound(sentence, altTopic):
     # Paste the second half of the sentence onto the first half
     sentence.contents.extend(shellSentence.contents)
 
-    logging.debug("Reply (in progress)
+    logging.debug("Reply (in progress): {0}".format(str(sentence.contents)))
+    return s
