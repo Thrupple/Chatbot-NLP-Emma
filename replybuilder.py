@@ -286,4 +286,4 @@ def make_compound(sentence, altTopic):
     return sentence
 
 def make_greeting(message):
-    # Th
+    # This function is a little different from the others, but it works pretty sim
