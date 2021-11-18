@@ -283,4 +283,7 @@ def make_compound(sentence, altTopic):
     sentence.contents.extend(shellSentence.contents)
 
     logging.debug("Reply (in progress): {0}".format(str(sentence.contents)))
-    return s
+    return sentence
+
+def make_greeting(message):
+    # Th
