@@ -280,3 +280,4 @@ def make_compound(sentence, altTopic):
         sentence.contents.append(SBBConjunction())
 
     # Paste the second half of the sentence onto the first half
+    sentence.contents.extend(shellSentence
