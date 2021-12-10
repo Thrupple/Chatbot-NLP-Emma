@@ -289,4 +289,6 @@ def make_greeting(message):
     # This function is a little different from the others, but it works pretty similarly
     # First we make a shell sentence, like in make_compound()
     shellSentence = Sentence()
-    shellSentence.domain = 'gr
+    shellSentence.domain = 'greeting'
+
+    # Start our sentence with a greet
