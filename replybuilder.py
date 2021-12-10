@@ -291,4 +291,5 @@ def make_greeting(message):
     shellSentence = Sentence()
     shellSentence.domain = 'greeting'
 
-    # Start our sentence with a greet
+    # Start our sentence with a greeting
+    # Walk into the room, gonna make your bang 
