@@ -298,4 +298,6 @@ def make_greeting(message):
         [u'hi'],
         [u'hello']
     ]
-    shellSent
+    shellSentence.contents.extend(random.choice(starters))
+
+  
