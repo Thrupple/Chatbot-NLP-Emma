@@ -300,4 +300,5 @@ def make_greeting(message):
     ]
     shellSentence.contents.extend(random.choice(starters))
 
-  
+    # Coin flip for adding the word 'there'
+    if random.
