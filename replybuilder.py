@@ -302,4 +302,6 @@ def make_greeting(message):
 
     # Coin flip for adding the word 'there'
     if random.choice([True, False]):
-        shellSentence.conten
+        shellSentence.contents.append(u'there')
+
+    # Add the messag
