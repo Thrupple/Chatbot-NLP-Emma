@@ -310,4 +310,6 @@ def make_greeting(message):
     return shellSentence
         
 def reply(message, moodValue, allowInterrogative=True):
-    """Replies to a Message object using the associations we built using train
+    """Replies to a Message object using the associations we built using train()"""
+    logging.info("Building reply...")
+    reply = []
