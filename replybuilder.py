@@ -309,4 +309,5 @@ def make_greeting(message):
     shellSentence.contents.append(SBBPunctuation())
     return shellSentence
         
-def reply(message, moodValue, allow
+def reply(message, moodValue, allowInterrogative=True):
+    """Replies to a Message obj
