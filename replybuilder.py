@@ -310,4 +310,4 @@ def make_greeting(message):
     return shellSentence
         
 def reply(message, moodValue, allowInterrogative=True):
-    """Replies to a Message obj
+    """Replies to a Message object using the associations we built using train
