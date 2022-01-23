@@ -305,4 +305,5 @@ def make_greeting(message):
         shellSentence.contents.append(u'there')
 
     # Add the message sender's username
+    shellSentence.contents.append(message.sender)
     shellSentence.contents.appen
