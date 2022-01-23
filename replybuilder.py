@@ -304,4 +304,5 @@ def make_greeting(message):
     if random.choice([True, False]):
         shellSentence.contents.append(u'there')
 
-    # Add the messag
+    # Add the message sender's username
+    shellSentence.contents.appen
