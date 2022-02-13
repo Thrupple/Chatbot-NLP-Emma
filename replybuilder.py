@@ -313,3 +313,5 @@ def reply(message, moodValue, allowInterrogative=True):
     """Replies to a Message object using the associations we built using train()"""
     logging.info("Building reply...")
     reply = []
+
+    # Make sure we can actually generate a reply
