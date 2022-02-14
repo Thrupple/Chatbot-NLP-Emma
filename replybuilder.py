@@ -315,3 +315,6 @@ def reply(message, moodValue, allowInterrogative=True):
     reply = []
 
     # Make sure we can actually generate a reply
+    if len(message.keywords) > 0:
+        pass
+    else:
