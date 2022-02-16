@@ -318,4 +318,5 @@ def reply(message, moodValue, allowInterrogative=True):
     if len(message.keywords) > 0:
         pass
     else:
-        logging.warn('No keywords in Message obj
+        logging.warn('No keywords in Message object. Sentence generation failed.')
+        
