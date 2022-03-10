@@ -324,4 +324,6 @@ def reply(message, moodValue, allowInterrogative=True):
     # Decide how many sentences long our reply will be (excluding greetings, which don't count because a message could be just a greeting)
     minSentences = 1
     maxSentences = 4
-    sentences = random.randint(minSentences, maxSentenc
+    sentences = random.randint(minSentences, maxSentences)
+    for i in range(0, sentences):
+        reply.appen
