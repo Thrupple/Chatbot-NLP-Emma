@@ -326,4 +326,5 @@ def reply(message, moodValue, allowInterrogative=True):
     maxSentences = 4
     sentences = random.randint(minSentences, maxSentences)
     for i in range(0, sentences):
-        reply.appen
+        reply.append(Sentence())
+    logging.debug("Generating {0}
