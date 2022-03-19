@@ -327,4 +327,6 @@ def reply(message, moodValue, allowInterrogative=True):
     sentences = random.randint(minSentences, maxSentences)
     for i in range(0, sentences):
         reply.append(Sentence())
-    logging.debug("Generating {0}
+    logging.debug("Generating {0} sentences...".format(sentences))
+
+    # Choose the se
