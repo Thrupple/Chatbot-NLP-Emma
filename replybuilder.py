@@ -329,4 +329,5 @@ def reply(message, moodValue, allowInterrogative=True):
         reply.append(Sentence())
     logging.debug("Generating {0} sentences...".format(sentences))
 
-    # Choose the se
+    # Choose the sentences' topics and domains
+    loggi
