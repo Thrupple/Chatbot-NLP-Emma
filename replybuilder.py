@@ -330,4 +330,5 @@ def reply(message, moodValue, allowInterrogative=True):
     logging.debug("Generating {0} sentences...".format(sentences))
 
     # Choose the sentences' topics and domains
-    loggi
+    logging.info("Choosing sentence topics and domains...")
+    loggin
