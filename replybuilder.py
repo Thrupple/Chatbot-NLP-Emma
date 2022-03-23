@@ -331,4 +331,5 @@ def reply(message, moodValue, allowInterrogative=True):
 
     # Choose the sentences' topics and domains
     logging.info("Choosing sentence topics and domains...")
-    logging.debug("Message has {0} keywords".format(len(mess
+    logging.debug("Message has {0} keywords".format(len(message.keywords)))
+    logging.debug("Keywords: {0}".format(str(mess
