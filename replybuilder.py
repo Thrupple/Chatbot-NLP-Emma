@@ -342,4 +342,4 @@ def reply(message, moodValue, allowInterrogative=True):
         sentence.topic = random.choice(message.keywords)
 
         # Look up associations for the keyword
-        
+        logging.debug("Choosing domain for sentence {0}...".fo
