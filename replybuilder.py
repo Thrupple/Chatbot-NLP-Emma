@@ -338,4 +338,5 @@ def reply(message, moodValue, allowInterrogative=True):
     replyHasInterrogative = False
 
     for i, sentence in enumerate(reply):
-        logging.debug("Choosing topic for se
+        logging.debug("Choosing topic for sentence {0}...".format(i+1))
+        sentence
