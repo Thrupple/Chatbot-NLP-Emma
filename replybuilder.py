@@ -340,3 +340,6 @@ def reply(message, moodValue, allowInterrogative=True):
     for i, sentence in enumerate(reply):
         logging.debug("Choosing topic for sentence {0}...".format(i+1))
         sentence.topic = random.choice(message.keywords)
+
+        # Look up associations for the keyword
+        
