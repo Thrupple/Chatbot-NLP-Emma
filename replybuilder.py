@@ -339,4 +339,4 @@ def reply(message, moodValue, allowInterrogative=True):
 
     for i, sentence in enumerate(reply):
         logging.debug("Choosing topic for sentence {0}...".format(i+1))
-        sentence
+        sentence.topic = random.choice(message.keywords)
