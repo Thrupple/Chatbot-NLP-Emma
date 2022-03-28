@@ -337,4 +337,5 @@ def reply(message, moodValue, allowInterrogative=True):
     # We only want to allow one question per reply, so this variable tracks whether or not we've used it up
     replyHasInterrogative = False
 
-    for i, sentence
+    for i, sentence in enumerate(reply):
+        logging.debug("Choosing topic for se
