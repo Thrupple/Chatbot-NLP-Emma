@@ -334,4 +334,5 @@ def reply(message, moodValue, allowInterrogative=True):
     logging.debug("Message has {0} keywords".format(len(message.keywords)))
     logging.debug("Keywords: {0}".format(str(message.keywords)))
 
-    # We only want to allow one question per reply, so this var
+    # We only want to allow one question per reply, so this variable tracks whether or not we've used it up
+    replyHas
