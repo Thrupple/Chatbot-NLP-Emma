@@ -343,4 +343,6 @@ def reply(message, moodValue, allowInterrogative=True):
 
         # Look up associations for the keyword
         logging.debug("Choosing domain for sentence {0}...".format(i+1))
-        associations = find_associatio
+        associations = find_associations(sentence.topic)
+
+        # Choose a domain based
