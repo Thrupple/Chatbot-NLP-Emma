@@ -345,4 +345,5 @@ def reply(message, moodValue, allowInterrogative=True):
         logging.debug("Choosing domain for sentence {0}...".format(i+1))
         associations = find_associations(sentence.topic)
 
-        # Choose a domain based
+        # Choose a domain based on the associations
+        # Decide what 
