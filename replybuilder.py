@@ -346,4 +346,5 @@ def reply(message, moodValue, allowInterrogative=True):
         associations = find_associations(sentence.topic)
 
         # Choose a domain based on the associations
-        # Decide what 
+        # Decide what domains are valid to be chosen
+        validDomain
