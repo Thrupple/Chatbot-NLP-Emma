@@ -347,4 +347,6 @@ def reply(message, moodValue, allowInterrogative=True):
 
         # Choose a domain based on the associations
         # Decide what domains are valid to be chosen
-        validDomain
+        validDomains = {
+            'declarative': False,
+            'im
