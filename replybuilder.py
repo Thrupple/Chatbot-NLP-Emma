@@ -349,4 +349,5 @@ def reply(message, moodValue, allowInterrogative=True):
         # Decide what domains are valid to be chosen
         validDomains = {
             'declarative': False,
-            'im
+            'imperative': False,
+            'interrogative': False,
