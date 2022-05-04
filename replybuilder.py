@@ -351,3 +351,5 @@ def reply(message, moodValue, allowInterrogative=True):
             'declarative': False,
             'imperative': False,
             'interrogative': False,
+            'simple': False,
+            'compound': Fal
