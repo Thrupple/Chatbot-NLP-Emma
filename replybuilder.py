@@ -355,4 +355,5 @@ def reply(message, moodValue, allowInterrogative=True):
             'compound': False
         }
         for association in associations:
-            if association.word == se
+            if association.word == sentence.topic:
+                if association.associationT
