@@ -354,4 +354,5 @@ def reply(message, moodValue, allowInterrogative=True):
             'simple': False,
             'compound': False
         }
-        for association in associ
+        for association in associations:
+            if association.word == se
