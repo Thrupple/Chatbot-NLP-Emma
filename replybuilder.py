@@ -352,4 +352,6 @@ def reply(message, moodValue, allowInterrogative=True):
             'imperative': False,
             'interrogative': False,
             'simple': False,
-            'compound': Fal
+            'compound': False
+        }
+        for association in associ
