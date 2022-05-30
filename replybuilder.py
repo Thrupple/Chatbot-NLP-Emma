@@ -356,4 +356,5 @@ def reply(message, moodValue, allowInterrogative=True):
         }
         for association in associations:
             if association.word == sentence.topic:
-                if association.associationT
+                if association.associationType == 'HAS-PROPERTY':
+                  
