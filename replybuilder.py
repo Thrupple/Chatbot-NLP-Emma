@@ -358,4 +358,5 @@ def reply(message, moodValue, allowInterrogative=True):
             if association.word == sentence.topic:
                 if association.associationType == 'HAS-PROPERTY':
                     validDomains['declarative'] = True
-                if 
+                if association.associationType == "HAS-ABILITY-TO":
+ 
