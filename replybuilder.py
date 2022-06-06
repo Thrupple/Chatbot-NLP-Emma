@@ -361,4 +361,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 if association.associationType == "HAS-ABILITY-TO":
                     validDomains['imperative'] = True
                 if association.associationType == "HAS-PROPERTY":
-                    validDomains['s
+                    validDomains['simple'] = True
+        if validDomains['simple'
