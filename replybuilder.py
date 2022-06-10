@@ -363,4 +363,6 @@ def reply(message, moodValue, allowInterrogative=True):
                 if association.associationType == "HAS-PROPERTY":
                     validDomains['simple'] = True
         if validDomains['simple'] and len(associations) > 1:
-            validDom
+            validDomains['compound'] = True
+        if moodValue > -0.4:
+    
