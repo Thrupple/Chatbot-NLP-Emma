@@ -365,4 +365,4 @@ def reply(message, moodValue, allowInterrogative=True):
         if validDomains['simple'] and len(associations) > 1:
             validDomains['compound'] = True
         if moodValue > -0.4:
-    
+            # Only allow one interrogative per reply
