@@ -367,4 +367,7 @@ def reply(message, moodValue, allowInterrogative=True):
         if moodValue > -0.4:
             # Only allow one interrogative per reply
             if replyHasInterrogative == False:
-                validDomains['interrogative'] = Tru
+                validDomains['interrogative'] = True
+            
+        domains = []
+        i
