@@ -370,4 +370,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 validDomains['interrogative'] = True
             
         domains = []
-        i
+        if validDomains['declarative']:
+            domains.
