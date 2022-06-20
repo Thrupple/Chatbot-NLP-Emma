@@ -376,4 +376,5 @@ def reply(message, moodValue, allowInterrogative=True):
             domains.append('imperative')
         if validDomains['simple']:
             domains.append('simple')
-        if v
+        if validDomains['compound']:
+            domains.append('compound')
