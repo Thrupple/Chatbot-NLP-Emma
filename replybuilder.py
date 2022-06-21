@@ -379,4 +379,5 @@ def reply(message, moodValue, allowInterrogative=True):
         if validDomains['compound']:
             domains.append('compound')
         if validDomains['interrogative']:
-           
+            domains.append('interrogative')
+        # If 
