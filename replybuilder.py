@@ -380,4 +380,5 @@ def reply(message, moodValue, allowInterrogative=True):
             domains.append('compound')
         if validDomains['interrogative']:
             domains.append('interrogative')
-        # If we can generate non-interrogative sentences,
+        # If we can generate non-interrogative sentences, we would profer to do that
+        if le
