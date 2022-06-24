@@ -381,4 +381,6 @@ def reply(message, moodValue, allowInterrogative=True):
         if validDomains['interrogative']:
             domains.append('interrogative')
         # If we can generate non-interrogative sentences, we would profer to do that
-        if le
+        if len(domains) > 2:
+            if 'interrogative' in domains:
+ 
