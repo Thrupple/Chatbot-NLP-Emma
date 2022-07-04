@@ -387,4 +387,5 @@ def reply(message, moodValue, allowInterrogative=True):
 
         if len(domains) > 0:
             sentence.domain = random.choice(domains)
-        e
+        else: 
+            logging.warn('No domains ava
