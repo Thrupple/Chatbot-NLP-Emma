@@ -386,4 +386,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 domains.remove('interrogative')
 
         if len(domains) > 0:
-    
+            sentence.domain = random.choice(domains)
+        e
