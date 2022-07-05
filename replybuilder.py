@@ -388,4 +388,4 @@ def reply(message, moodValue, allowInterrogative=True):
         if len(domains) > 0:
             sentence.domain = random.choice(domains)
         else: 
-            logging.warn('No domains ava
+            logging.warn('No domains available for sentence generation. Sentence generation fa
