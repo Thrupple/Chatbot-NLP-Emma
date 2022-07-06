@@ -391,4 +391,5 @@ def reply(message, moodValue, allowInterrogative=True):
             logging.warn('No domains available for sentence generation. Sentence generation failed.')
             return False
         
-        logging.debug("
+        logging.debug("Valid domains: {0}".format(str(domains)))
+        log
