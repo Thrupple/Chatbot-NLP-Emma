@@ -392,4 +392,5 @@ def reply(message, moodValue, allowInterrogative=True):
             return False
         
         logging.debug("Valid domains: {0}".format(str(domains)))
-        log
+        logging.debug("Chose {0}".format(sentence.domain))
+
