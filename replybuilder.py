@@ -394,3 +394,4 @@ def reply(message, moodValue, allowInterrogative=True):
         logging.debug("Valid domains: {0}".format(str(domains)))
         logging.debug("Chose {0}".format(sentence.domain))
 
+        # Build sentence structures
