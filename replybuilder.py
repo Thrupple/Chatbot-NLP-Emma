@@ -395,4 +395,4 @@ def reply(message, moodValue, allowInterrogative=True):
         logging.debug("Chose {0}".format(sentence.domain))
 
         # Build sentence structures
-        logging.info("Building {0} structure for sente
+        logging.info("Building {0} structure for sentence {1} of {2}...".format(sentence.domain, i+1
