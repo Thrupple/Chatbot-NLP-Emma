@@ -398,4 +398,5 @@ def reply(message, moodValue, allowInterrogative=True):
         logging.info("Building {0} structure for sentence {1} of {2}...".format(sentence.domain, i+1, len(reply)))
         if sentence.domain == 'declarative':
             sentence = make_declarative(sentence)
-            sentence.conten
+            sentence.contents.append(SBBPunctuation())
+        elif sente
