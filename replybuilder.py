@@ -399,4 +399,5 @@ def reply(message, moodValue, allowInterrogative=True):
         if sentence.domain == 'declarative':
             sentence = make_declarative(sentence)
             sentence.contents.append(SBBPunctuation())
-        elif sente
+        elif sentence.domain == 'imperative':
+            sentence = m
