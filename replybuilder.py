@@ -402,4 +402,5 @@ def reply(message, moodValue, allowInterrogative=True):
         elif sentence.domain == 'imperative':
             sentence = make_imperative(sentence)
             sentence.contents.append(SBBPunctuation())
-        elif sentence.dom
+        elif sentence.domain == 'interrogative':
+            # Only all
