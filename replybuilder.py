@@ -403,4 +403,5 @@ def reply(message, moodValue, allowInterrogative=True):
             sentence = make_imperative(sentence)
             sentence.contents.append(SBBPunctuation())
         elif sentence.domain == 'interrogative':
-            # Only all
+            # Only allow one interrogative per reply
+            replyHasIn
