@@ -404,4 +404,5 @@ def reply(message, moodValue, allowInterrogative=True):
             sentence.contents.append(SBBPunctuation())
         elif sentence.domain == 'interrogative':
             # Only allow one interrogative per reply
-            replyHasIn
+            replyHasInterrogative = True
+            sentence = m
