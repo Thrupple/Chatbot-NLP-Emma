@@ -405,4 +405,5 @@ def reply(message, moodValue, allowInterrogative=True):
         elif sentence.domain == 'interrogative':
             # Only allow one interrogative per reply
             replyHasInterrogative = True
-            sentence = m
+            sentence = make_interrogative(sentence)
+        elif sentenc
