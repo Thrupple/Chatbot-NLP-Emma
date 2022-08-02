@@ -407,4 +407,5 @@ def reply(message, moodValue, allowInterrogative=True):
             replyHasInterrogative = True
             sentence = make_interrogative(sentence)
         elif sentence.domain == 'simple':
+            sentence = make_simple(sentence)
          
