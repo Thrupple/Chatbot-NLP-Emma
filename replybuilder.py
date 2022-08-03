@@ -408,4 +408,4 @@ def reply(message, moodValue, allowInterrogative=True):
             sentence = make_interrogative(sentence)
         elif sentence.domain == 'simple':
             sentence = make_simple(sentence)
-         
+            sentence.contents.append(SBBPunctuation
