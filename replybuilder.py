@@ -409,4 +409,5 @@ def reply(message, moodValue, allowInterrogative=True):
         elif sentence.domain == 'simple':
             sentence = make_simple(sentence)
             sentence.contents.append(SBBPunctuation())
-        elif sentence.domain == 'compoun
+        elif sentence.domain == 'compound':
+            sentence = make_compound(senten
