@@ -413,4 +413,5 @@ def reply(message, moodValue, allowInterrogative=True):
             sentence = make_compound(sentence, random.choice(message.keywords))
             sentence.contents.append(SBBPunctuation())
 
-    # Re
+    # Reorder sentences based on their domain
+    # TODO: 
