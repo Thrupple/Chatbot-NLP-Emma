@@ -414,4 +414,5 @@ def reply(message, moodValue, allowInterrogative=True):
             sentence.contents.append(SBBPunctuation())
 
     # Reorder sentences based on their domain
-    # TODO: 
+    # TODO: come up with a better way to do this
+    reorderedRep
