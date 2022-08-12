@@ -415,4 +415,6 @@ def reply(message, moodValue, allowInterrogative=True):
 
     # Reorder sentences based on their domain
     # TODO: come up with a better way to do this
-    reorderedRep
+    reorderedReply = []
+    for sentence in reply:
+        if s
