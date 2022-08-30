@@ -421,4 +421,7 @@ def reply(message, moodValue, allowInterrogative=True):
             reorderedReply.append(sentence)
     for sentence in reply:
         if sentence.domain == 'interrogative':
-            reorderedReply.appen
+            reorderedReply.append(sentence)
+    reply = reorderedReply
+
+   
