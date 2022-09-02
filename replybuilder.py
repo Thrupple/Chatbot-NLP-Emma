@@ -426,4 +426,5 @@ def reply(message, moodValue, allowInterrogative=True):
 
     # Decide whether or not to add a greeting -- various factors contribute to a weighted coin flip
     greetingAdditionPotential = 0
-    for greeting 
+    for greeting in misc.greetingStrings:
+        if greeting in ' '.split(me
