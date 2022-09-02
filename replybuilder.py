@@ -424,4 +424,6 @@ def reply(message, moodValue, allowInterrogative=True):
             reorderedReply.append(sentence)
     reply = reorderedReply
 
-    # Decide whether or not to add a greeting -- various factors contribute to a weighted coin
+    # Decide whether or not to add a greeting -- various factors contribute to a weighted coin flip
+    greetingAdditionPotential = 0
+    for greeting 
