@@ -430,4 +430,5 @@ def reply(message, moodValue, allowInterrogative=True):
         if greeting in ' '.split(message.message)[0:3]:
             greetingAdditionPotential += 1
     if message.avgMood >= 0.2:
-   
+        greetingAdditionPotential += 1
+    if moodValue >= 0.
