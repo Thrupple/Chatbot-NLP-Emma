@@ -431,4 +431,7 @@ def reply(message, moodValue, allowInterrogative=True):
             greetingAdditionPotential += 1
     if message.avgMood >= 0.2:
         greetingAdditionPotential += 1
-    if moodValue >= 0.
+    if moodValue >= 0.2:
+        greetingAdditionPotential += 1
+
+    # If emma's mood is l
