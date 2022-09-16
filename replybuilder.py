@@ -434,4 +434,4 @@ def reply(message, moodValue, allowInterrogative=True):
     if moodValue >= 0.2:
         greetingAdditionPotential += 1
 
-    # If emma's mood is l
+    # If emma's mood is low enough, destroy any chance of making a greetin
