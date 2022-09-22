@@ -438,4 +438,5 @@ def reply(message, moodValue, allowInterrogative=True):
     if moodValue < -0.4:
         greetingAdditionPotential = 0
 
-    # Do weighted coin flip to deci
+    # Do weighted coin flip to decide whether or not to add a greeting
+    if random.
