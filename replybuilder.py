@@ -436,4 +436,6 @@ def reply(message, moodValue, allowInterrogative=True):
 
     # If emma's mood is low enough, destroy any chance of making a greeting
     if moodValue < -0.4:
-        greetingAdditionPo
+        greetingAdditionPotential = 0
+
+    # Do weighted coin flip to deci
