@@ -439,4 +439,5 @@ def reply(message, moodValue, allowInterrogative=True):
         greetingAdditionPotential = 0
 
     # Do weighted coin flip to decide whether or not to add a greeting
-    if random.choice(([True] * greetingAdditionPotential
+    if random.choice(([True] * greetingAdditionPotential) + [False]):
+        reply.insert(0, make_g
