@@ -440,4 +440,6 @@ def reply(message, moodValue, allowInterrogative=True):
 
     # Do weighted coin flip to decide whether or not to add a greeting
     if random.choice(([True] * greetingAdditionPotential) + [False]):
-        reply.insert(0, make_g
+        reply.insert(0, make_greeting(message))
+
+    # Evaluate sentence 
