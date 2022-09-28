@@ -442,4 +442,6 @@ def reply(message, moodValue, allowInterrogative=True):
     if random.choice(([True] * greetingAdditionPotential) + [False]):
         reply.insert(0, make_greeting(message))
 
-    # Evaluate sentence 
+    # Evaluate sentence building block objects
+    for sentence in reply:
+     
