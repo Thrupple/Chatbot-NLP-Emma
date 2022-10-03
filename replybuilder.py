@@ -445,4 +445,5 @@ def reply(message, moodValue, allowInterrogative=True):
     # Evaluate sentence building block objects
     for sentence in reply:
         for i, word in enumerate(sentence.contents):
-      
+            # Have/has
+            if isinstance(word, SBBHav
