@@ -447,4 +447,5 @@ def reply(message, moodValue, allowInterrogative=True):
         for i, word in enumerate(sentence.contents):
             # Have/has
             if isinstance(word, SBBHaveHas):
-                if sentence.isPlural
+                if sentence.isPlural:
+                    sentence.contents[i] = 
