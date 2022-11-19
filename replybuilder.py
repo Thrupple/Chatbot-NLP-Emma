@@ -448,4 +448,6 @@ def reply(message, moodValue, allowInterrogative=True):
             # Have/has
             if isinstance(word, SBBHaveHas):
                 if sentence.isPlural:
-                    sentence.contents[i] = 
+                    sentence.contents[i] = u'have'
+                else:
+                    
