@@ -450,4 +450,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 if sentence.isPlural:
                     sentence.contents[i] = u'have'
                 else:
-                    
+                    sentence.contents[i] = u'has'
+            # Is/
