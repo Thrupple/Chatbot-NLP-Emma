@@ -453,4 +453,5 @@ def reply(message, moodValue, allowInterrogative=True):
                     sentence.contents[i] = u'has'
             # Is/Are
             elif isinstance(word, SBBIsAre):
-                logging.debug("Evaluating SBBIsA
+                logging.debug("Evaluating SBBIsAre object...")
+                if sentence.isPl
