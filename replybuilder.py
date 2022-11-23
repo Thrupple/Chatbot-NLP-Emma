@@ -455,4 +455,6 @@ def reply(message, moodValue, allowInterrogative=True):
             elif isinstance(word, SBBIsAre):
                 logging.debug("Evaluating SBBIsAre object...")
                 if sentence.isPlural:
-                    sentence.contents[i] = u'are
+                    sentence.contents[i] = u'are'
+                else:
+                    
