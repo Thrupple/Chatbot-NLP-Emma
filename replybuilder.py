@@ -458,4 +458,5 @@ def reply(message, moodValue, allowInterrogative=True):
                     sentence.contents[i] = u'are'
                 else:
                     sentence.contents[i] = u'is'
-            # Articles
+            # Articles (a, the, etc.)
+            elif isinstance(word, SBB
