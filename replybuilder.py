@@ -457,4 +457,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 if sentence.isPlural:
                     sentence.contents[i] = u'are'
                 else:
-                    
+                    sentence.contents[i] = u'is'
+            # Articles
