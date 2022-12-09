@@ -459,4 +459,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 else:
                     sentence.contents[i] = u'is'
             # Articles (a, the, etc.)
-            elif isinstance(word, SBB
+            elif isinstance(word, SBBArticle):
+                logging.debug("Evalu
