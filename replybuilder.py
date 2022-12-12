@@ -460,4 +460,5 @@ def reply(message, moodValue, allowInterrogative=True):
                     sentence.contents[i] = u'is'
             # Articles (a, the, etc.)
             elif isinstance(word, SBBArticle):
-                logging.debug("Evalu
+                logging.debug("Evaluating SBBArticle object...")
+                va
