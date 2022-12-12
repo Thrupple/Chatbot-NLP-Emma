@@ -462,4 +462,5 @@ def reply(message, moodValue, allowInterrogative=True):
             elif isinstance(word, SBBArticle):
                 logging.debug("Evaluating SBBArticle object...")
                 validArticles = [u'the']
-                if s
+                if sentence.isPlural == False:
+                   
