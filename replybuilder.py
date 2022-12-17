@@ -463,4 +463,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 logging.debug("Evaluating SBBArticle object...")
                 validArticles = [u'the']
                 if sentence.isPlural == False:
-                   
+                    if sentence.contents[i+1][0] in misc.vowels:
+     
