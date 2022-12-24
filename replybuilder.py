@@ -464,4 +464,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 validArticles = [u'the']
                 if sentence.isPlural == False:
                     if sentence.contents[i+1][0] in misc.vowels:
-     
+                        validArticles.append(u'an')
+            
