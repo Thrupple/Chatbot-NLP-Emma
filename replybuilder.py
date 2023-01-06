@@ -466,4 +466,6 @@ def reply(message, moodValue, allowInterrogative=True):
                     if sentence.contents[i+1][0] in misc.vowels:
                         validArticles.append(u'an')
                     else:
-                        validArticle
+                        validArticles.append(u'a')
+                else:
+             
