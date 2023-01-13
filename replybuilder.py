@@ -468,4 +468,5 @@ def reply(message, moodValue, allowInterrogative=True):
                     else:
                         validArticles.append(u'a')
                 else:
-             
+                    validArticles.extend([u'some', u'many'])
+  
