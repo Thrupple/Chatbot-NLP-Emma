@@ -469,4 +469,4 @@ def reply(message, moodValue, allowInterrogative=True):
                         validArticles.append(u'a')
                 else:
                     validArticles.extend([u'some', u'many'])
-  
+                sentence.contents[i] = random.choice(validArti
