@@ -471,4 +471,5 @@ def reply(message, moodValue, allowInterrogative=True):
                     validArticles.extend([u'some', u'many'])
                 sentence.contents[i] = random.choice(validArticles)
             # Conjunctions (but, and, etc.)
-   
+            elif isinstance(word, SBBConjunction):
+         
