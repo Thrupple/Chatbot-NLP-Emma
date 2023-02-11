@@ -472,4 +472,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 sentence.contents[i] = random.choice(validArticles)
             # Conjunctions (but, and, etc.)
             elif isinstance(word, SBBConjunction):
-                logging.debug("Evaluating SBBConjunction object.
+                logging.debug("Evaluating SBBConjunction object...")
+                sentence.contents[i] = ran
