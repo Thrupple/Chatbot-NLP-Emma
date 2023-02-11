@@ -473,4 +473,5 @@ def reply(message, moodValue, allowInterrogative=True):
             # Conjunctions (but, and, etc.)
             elif isinstance(word, SBBConjunction):
                 logging.debug("Evaluating SBBConjunction object...")
-                sentence.contents[i] = ran
+                sentence.contents[i] = random.choice([u'and', u'but', u'while'])
+        
