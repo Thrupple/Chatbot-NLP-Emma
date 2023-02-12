@@ -474,4 +474,4 @@ def reply(message, moodValue, allowInterrogative=True):
             elif isinstance(word, SBBConjunction):
                 logging.debug("Evaluating SBBConjunction object...")
                 sentence.contents[i] = random.choice([u'and', u'but', u'while'])
-        
+            # Punctuation choice is a coin flip g
