@@ -480,4 +480,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 logging.debug("Evaluating SBBPunctuation object...")
                 canExclaim = False
                 if moodValue > -0.2:
-       
+                    canExclaim = True
+                if random.choi
