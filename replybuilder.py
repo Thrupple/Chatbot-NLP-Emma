@@ -475,4 +475,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 logging.debug("Evaluating SBBConjunction object...")
                 sentence.contents[i] = random.choice([u'and', u'but', u'while'])
             # Punctuation choice is a coin flip gated by mood
-            # TODO: Maybe have mood actually influence the coin flip instead of jus
+            # TODO: Maybe have mood actually influence the coin flip instead of just gating it?
+            elif isinstance(word, SBBPunc
