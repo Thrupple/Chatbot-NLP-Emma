@@ -477,4 +477,5 @@ def reply(message, moodValue, allowInterrogative=True):
             # Punctuation choice is a coin flip gated by mood
             # TODO: Maybe have mood actually influence the coin flip instead of just gating it?
             elif isinstance(word, SBBPunctuation):
-                logging.debug("Evaluating S
+                logging.debug("Evaluating SBBPunctuation object...")
+                canExclaim = 
