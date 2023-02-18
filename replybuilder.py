@@ -476,4 +476,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 sentence.contents[i] = random.choice([u'and', u'but', u'while'])
             # Punctuation choice is a coin flip gated by mood
             # TODO: Maybe have mood actually influence the coin flip instead of just gating it?
-            elif isinstance(word, SBBPunc
+            elif isinstance(word, SBBPunctuation):
+                logging.debug("Evaluating S
