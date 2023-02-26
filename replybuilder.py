@@ -482,4 +482,6 @@ def reply(message, moodValue, allowInterrogative=True):
                 if moodValue > -0.2:
                     canExclaim = True
                 if random.choice([False, canExclaim]):
-                    sent
+                    sentence.contents[i] = u'!'
+                else:
+          
