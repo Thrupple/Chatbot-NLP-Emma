@@ -481,4 +481,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 canExclaim = False
                 if moodValue > -0.2:
                     canExclaim = True
-                if random.choi
+                if random.choice([False, canExclaim]):
+                    sent
