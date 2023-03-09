@@ -484,4 +484,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 if random.choice([False, canExclaim]):
                     sentence.contents[i] = u'!'
                 else:
-          
+                    sentence.contents[i] = u'.'
+            els
