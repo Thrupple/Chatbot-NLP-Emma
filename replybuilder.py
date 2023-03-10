@@ -485,4 +485,7 @@ def reply(message, moodValue, allowInterrogative=True):
                     sentence.contents[i] = u'!'
                 else:
                     sentence.contents[i] = u'.'
-            els
+            else:
+                sentence.contents[i] = word
+
+    # One 
