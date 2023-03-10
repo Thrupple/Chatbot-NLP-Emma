@@ -488,4 +488,5 @@ def reply(message, moodValue, allowInterrogative=True):
             else:
                 sentence.contents[i] = word
 
-    # One 
+    # One final run to finalize the message
+    finishedSentences =
