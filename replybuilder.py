@@ -494,4 +494,4 @@ def reply(message, moodValue, allowInterrogative=True):
         # Capitalize the first letter of the sentence
         sentence.contents[0] = string.capwords(sentence.contents[0])
 
-     
+        for i, word in enumerate(sentence.conte
