@@ -491,4 +491,5 @@ def reply(message, moodValue, allowInterrogative=True):
     # One final run to finalize the message
     finishedSentences = []
     for sentence in reply:
-        # Capitalize th
+        # Capitalize the first letter of the sentence
+        sentence.c
