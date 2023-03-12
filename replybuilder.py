@@ -492,4 +492,6 @@ def reply(message, moodValue, allowInterrogative=True):
     finishedSentences = []
     for sentence in reply:
         # Capitalize the first letter of the sentence
-        sentence.c
+        sentence.contents[0] = string.capwords(sentence.contents[0])
+
+     
