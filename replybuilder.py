@@ -489,4 +489,6 @@ def reply(message, moodValue, allowInterrogative=True):
                 sentence.contents[i] = word
 
     # One final run to finalize the message
-    finishedSentences =
+    finishedSentences = []
+    for sentence in reply:
+        # Capitalize th
