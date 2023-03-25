@@ -495,4 +495,5 @@ def reply(message, moodValue, allowInterrogative=True):
         sentence.contents[0] = string.capwords(sentence.contents[0])
 
         for i, word in enumerate(sentence.contents):
-            # Refer to Ellie as mom and Al
+            # Refer to Ellie as mom and Alex as dad
+            if word in [u'sharkthemep
