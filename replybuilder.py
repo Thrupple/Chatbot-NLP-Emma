@@ -497,4 +497,5 @@ def reply(message, moodValue, allowInterrogative=True):
         for i, word in enumerate(sentence.contents):
             # Refer to Ellie as mom and Alex as dad
             if word in [u'sharkthemepark', u'deersyrup']:
-                if random.
+                if random.choice([True, False]):
+                    sentenc
