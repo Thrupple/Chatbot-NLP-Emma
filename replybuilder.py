@@ -499,4 +499,5 @@ def reply(message, moodValue, allowInterrogative=True):
             if word in [u'sharkthemepark', u'deersyrup']:
                 if random.choice([True, False]):
                     sentence.contents[i] = u'mom'
-            elif word == u'nosi
+            elif word == u'nosiron':
+                if random.choice([True, Fa
