@@ -498,4 +498,5 @@ def reply(message, moodValue, allowInterrogative=True):
             # Refer to Ellie as mom and Alex as dad
             if word in [u'sharkthemepark', u'deersyrup']:
                 if random.choice([True, False]):
-                    sentenc
+                    sentence.contents[i] = u'mom'
+            elif word == u'nosi
