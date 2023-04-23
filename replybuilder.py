@@ -503,3 +503,4 @@ def reply(message, moodValue, allowInterrogative=True):
                 if random.choice([True, False]):
                     sentence.contents[i] = u'dad'
             elif word == u"n't":
+                sentence.contents[i] = u'not'
