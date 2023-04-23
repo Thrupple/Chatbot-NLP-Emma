@@ -500,4 +500,5 @@ def reply(message, moodValue, allowInterrogative=True):
                 if random.choice([True, False]):
                     sentence.contents[i] = u'mom'
             elif word == u'nosiron':
-                if random.choice([True, Fa
+                if random.choice([True, False]):
+                    sentence.contents[i]
