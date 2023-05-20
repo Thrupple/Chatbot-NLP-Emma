@@ -510,4 +510,6 @@ def reply(message, moodValue, allowInterrogative=True):
                 sentence.contents[i] = u'Emma'
 
             else:
-                sentence.
+                sentence.contents[i] = word
+        
+        # Turn the reply i
