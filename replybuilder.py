@@ -507,4 +507,7 @@ def reply(message, moodValue, allowInterrogative=True):
 
             # Capitalize 'Emma'
             elif word == u'emma':
-                sentence.contents
+                sentence.contents[i] = u'Emma'
+
+            else:
+                sentence.
