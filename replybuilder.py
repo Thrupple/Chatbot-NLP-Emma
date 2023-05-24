@@ -512,4 +512,6 @@ def reply(message, moodValue, allowInterrogative=True):
             else:
                 sentence.contents[i] = word
         
-        # Turn the reply i
+        # Turn the reply into a string
+        print sentence.contents
+        
