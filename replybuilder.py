@@ -514,4 +514,5 @@ def reply(message, moodValue, allowInterrogative=True):
         
         # Turn the reply into a string
         print sentence.contents
-        
+        sentence.contents[-2] += sentence.contents[-1]
+   
