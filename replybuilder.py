@@ -518,4 +518,6 @@ def reply(message, moodValue, allowInterrogative=True):
         sentence.contents.remove(sentence.contents[-1])
         finishedSentences.append(' '.join(sentence.contents))
 
-    finishedReply = '
+    finishedReply = ' '.join(finishedSentences)
+
+    # Fix the shitty broken u
