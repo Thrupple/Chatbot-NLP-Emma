@@ -516,4 +516,6 @@ def reply(message, moodValue, allowInterrogative=True):
         print sentence.contents
         sentence.contents[-2] += sentence.contents[-1]
         sentence.contents.remove(sentence.contents[-1])
-        finishedSentences.append(' '.
+        finishedSentences.append(' '.join(sentence.contents))
+
+    finishedReply = '
