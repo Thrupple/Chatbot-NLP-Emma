@@ -520,4 +520,5 @@ def reply(message, moodValue, allowInterrogative=True):
 
     finishedReply = ' '.join(finishedSentences)
 
-    # Fix the shitty broken u
+    # Fix the shitty broken unicode \xa0 thing
+    finishedReply = finishedReply
