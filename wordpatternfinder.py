@@ -4,4 +4,6 @@ import misc
 
 class InterrogativePackage:
     """
-    Packages the importan
+    Packages the important bits of question nicely
+
+    Class varia
