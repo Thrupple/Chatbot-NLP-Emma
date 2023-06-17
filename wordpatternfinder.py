@@ -2,4 +2,6 @@ import logging
 
 import misc
 
-class InterrogativePa
+class InterrogativePackage:
+    """
+    Packages the importan
