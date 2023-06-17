@@ -524,4 +524,4 @@ def reply(message, moodValue, allowInterrogative=True):
     finishedReply = finishedReply.replace(u'\xa0', u' ')
     finishedReply = finishedReply.replace(u'\\', u'')
 
-    return finishedRep
+    return finishedReply
