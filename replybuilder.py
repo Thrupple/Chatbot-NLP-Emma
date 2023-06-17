@@ -522,4 +522,6 @@ def reply(message, moodValue, allowInterrogative=True):
 
     # Fix the shitty broken unicode \xa0 thing
     finishedReply = finishedReply.replace(u'\xa0', u' ')
-    finishedReply = finished
+    finishedReply = finishedReply.replace(u'\\', u'')
+
+    return finishedRep
