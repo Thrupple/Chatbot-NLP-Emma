@@ -6,4 +6,5 @@ class InterrogativePackage:
     """
     Packages the important bits of question nicely
 
-    Class varia
+    Class variables:
+    questionType    str     Typ
