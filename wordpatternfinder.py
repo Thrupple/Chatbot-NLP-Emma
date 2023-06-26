@@ -12,4 +12,5 @@ class InterrogativePackage:
     subject         Word    The other half ('what is the color of the sky?' <- 'sky')
     """
 
-    def __init__(self, questionType, 
+    def __init__(self, questionType, attribute, subject):
+        self.questio
