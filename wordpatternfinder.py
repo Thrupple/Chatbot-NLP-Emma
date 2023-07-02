@@ -18,3 +18,4 @@ class InterrogativePackage:
         self.subject = subject
 
 def package_interrogatives(sentence):
+    """Packages questions in a way that's easy to unpack for ans
