@@ -20,4 +20,5 @@ class InterrogativePackage:
 def package_interrogatives(sentence):
     """Packages questions in a way that's easy to unpack for answering later"""
     # "What is...?"
-    if senten
+    if sentence.words[0].lemma == u'what':
+        if sen
