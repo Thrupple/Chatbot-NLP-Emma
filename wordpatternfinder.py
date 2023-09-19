@@ -35,4 +35,5 @@ def package_interrogatives(sentence):
                         pass
                     else:
                         subject = word
-                        
+                        break
+            if attribute != None and subject != Non
