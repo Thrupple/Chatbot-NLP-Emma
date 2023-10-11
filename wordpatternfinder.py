@@ -43,4 +43,5 @@ def package_interrogatives(sentence):
 
 def find_patterns(sentence):
     """Finds Sentence objects' domains and InterrogativePackages, if applicable"""
-    # If the sentence ends in a question mark, it's proabably int
+    # If the sentence ends in a question mark, it's proabably interrogative
+    if sentence.words[-1].word =
