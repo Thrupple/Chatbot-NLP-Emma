@@ -55,4 +55,4 @@ def find_patterns(sentence):
         if sentence.words[1].lemma == u'be':
             sentence.domain = 'DECLARATIVE'
 
-    loggin
+    logging.debug("Sentence domain: {0}".format(sen
